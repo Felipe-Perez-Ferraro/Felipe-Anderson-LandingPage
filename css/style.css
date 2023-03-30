@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/*Gral config*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;  
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --bg-primary: #fbf1cb;
+    --bg-secondary: rgb(45, 45, 45);
+}
+/**/
+
+/*Header*/
+#header {
+    background: var(--black);
+    position: fixed;
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+}
+
+.header__title {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#header-img {
+    width: 70px;
+}
+
+#nav-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link {
+    font-size: 20px; 
+    color: var(--white);
+    font-weight: 500;
+}
+/**/
+
+/*About*/
+#about {
+    height: 60vh;
+    background: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 11%;
+}
+
+.about__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about__title {
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+.about__p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 20% 0 0;
+}
+
+.wave {
+    transform: rotate(180deg);
+    position: absolute;
+    color: var(--bg-primary);
+    z-index: -1;
+}
+/**/
+
+/*Info*/
+#info {
+    padding: 30vh 11%;
+}
+
+.info__h {
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    max-width: 650px;
+    margin: 0px auto;
+    
+}
+
+.info__h::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #000;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.info__h::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #000;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.info__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.info__child {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.fa-solid {
+    font-size: 40px;
+}
+
+.info__p {
+    padding: 10px;
+}
+/**/
+
+/*Contact*/
+#contact {
+    padding: 0 11%;
+    background: var(--bg-secondary)
+}
+
+.contact__h {
+    padding-top: 50px;
+    font-size: 40px;
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    max-width: 750px;
+    margin: 0px auto;
+}
+
+.contact__h::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: var(--white);
+    left: 0;
+    top: 75%;
+    position: absolute;
+}
+
+.contact__h::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: var(--white);
+    right: 0;
+    top: 75%;
+    position: absolute;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.name__label {
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 10px;
+    color: var(--white);
+}
+
+.email__label {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px 0 50px;
+    color: var(--white);
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    background: transparent;
+    border: solid 1px var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--white);
+}
+
+#submit:hover {
+    background-color: var(--bg-primary);
+    color: var(--black);
+}
+
+@media screen and (max-width: 4000px) {
+    .nav-link:hover {
+        color: var(--bg-primary);
+    }
+}
